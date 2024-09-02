@@ -1,0 +1,24 @@
+Connection and Configuration:
+
+The code ensures that the consumer configuration is properly initialized once.
+PostgreSQL table creation is made conditional (IF NOT EXISTS) to avoid errors on repeated runs.
+
+Function insert_data:
+
+Documented the function to clarify its purpose.
+Moved the function definition above the consumer loop for better readability.
+
+Consumer Loop:
+
+The loop correctly polls Kafka messages, processes them, and decodes them.
+Error handling checks for errors in Kafka messages.
+The insert_data function is called with the decoded message.
+
+Clean Up:
+
+Proper closing of the Kafka consumer and PostgreSQL connections is ensured.
+
+Explanation:
+The script subscribes to a Kafka topic (topic_0) and continuously polls for messages.
+When a message is received, it is decoded and processed.
+The data is inserted into a PostgreSQL database hosted on Aiven.

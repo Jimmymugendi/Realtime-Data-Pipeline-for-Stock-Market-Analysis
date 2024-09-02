@@ -1,0 +1,9 @@
+DATA ENGINEERING PROJECT.
+Real-time Data Pipeline for Stock Market Analysis, the pipeline should ingest, process, and analyze stock market data in real-time.
+Tools, Frameworks, and Technologies: Stream processing, ETL (Extract, Transform, Load), data warehousing, Apache Kafka, Apache Spark, Confluent Cloud, NoSQL databases.
+Working Process Hint:
+You can use requests to access the stock data from www.alphavantage.co or any other platform and stream it using Apache Kafka to a cluster on the confluent cloud and consume it into a DB of your choice. (Feel free to use a different tool, approach, or technologies.
+Document your project well in a README.md  file, push your code into GitHub repository. Then submit the link to you GutHub repository (public repository). You can support your project with a technical article.
+While documenting explain the difference between:
+1).  ETL vs ELT.
+2). Batch proccessing vs stream proccessing.
